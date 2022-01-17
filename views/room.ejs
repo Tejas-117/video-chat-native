@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title><%= roomName %></title>
+
+   <link rel="stylesheet" href="/css/room.css">
+</head>
+<body>
+   <!-- Display all the users -->
+   <h2>Users in room: <%= roomName %>  </h2>
+   <div class="users-container">
+   </div>
+
+   <!-- Video-container -->
+   <div class="flexChild" id="camera-container">
+      <div class="camera-box">
+        <video id="local_video" thumbnail="/images/local.png" autoplay muted></video>        
+        <video id="peer_video" thumbnail="/images/peer.png" autoplay></video>
+      </div>
+   </div>
+   <button id="hangup-button" onclick="hangUpCall()" disabled> Hang Up</button>
+   
+   <script>
+      const roomID = '<%= roomID %>';
+      const roomName = '<%= roomName %>';
+   </script>
+   <script src="/socket.io/socket.io.js"></script>
+   <script src="/js/socketClient.js"></script>
+   <script src="/js/webrtc.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+How events occur in peer-to-peer communication : 
+
+-- For caller
+1). Create RTCpeerconnection.
+2). Get user media and add tracks to the connection.
+3). Start negotiation (ICE layer starts sending ICE candidates).
+4). Send 'video-offer' to remote peer.
+5). Handle 'video-answer' from remote peer.
+
+-- For callee
+1). Handle' video-offer'.
+2). Create answer and set SDP .
+3). Send 'video-answer' (ICE layer starts sending ICE candidates).

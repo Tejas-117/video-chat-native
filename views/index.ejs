@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Chat App</title>
+</head>
+<body>
+   <!-- create new room and join it -->
+   <form action="/create-room" method="post">
+      <label>Room Name :</label>
+      <input type="text" name="room[name]" required autocomplete="off">
+      <br>
+      <button>Create Room</button>
+   </form>
+
+   <br><br>
+   <!-- join room using url -->
+   <form action="/join-room" method="post">
+      <label>Room Link :</label>
+      <input type="text" name="roomUrl" required autocomplete="off">
+      <br>
+      <button>Join Room</button>
+   </form>
+
+</body>
+</html>
