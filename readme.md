@@ -24,7 +24,7 @@ To learn and undestand :
 - CSS 
 - Node (Express)
 
-##Update
+## Update
 
 - Implementing native WebRTC api is harder for multiple peers to communicate.
 - PeerJS helps us in achieving this with ease.
