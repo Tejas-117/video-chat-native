@@ -4,6 +4,7 @@
   - [Motive](#motive)
 - [My process](#my-process)
   - [Built with](#built-with)
+- [Update](#update)
 
 ## Overview
 
@@ -22,4 +23,9 @@ To learn and undestand :
 - HTML5 (EJS)
 - CSS 
 - Node (Express)
-- Socket.io
+
+##Update
+
+- Implementing native WebRTC api is harder for multiple peers to communicate.
+- PeerJS helps us in achieving this with ease.
+- New Site(https://video-conferencee.herokuapp.com/), using PeerJS.
